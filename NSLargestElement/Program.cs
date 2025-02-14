@@ -10,6 +10,7 @@ namespace NSLargestElement
             int[,] numbers = new int[10, 10];
             int randomMin = 1;
             int randomMax = 11;
+            int changeNumber = 0;
             int largestElement = int.MinValue;
 
             Console.WriteLine("Изначальный массив:\n");
@@ -40,10 +41,10 @@ namespace NSLargestElement
                 {
                     if (numbers[i, j] == largestElement)
                     {
-                        numbers[i, j] = 0;
+                        numbers[i, j] = changeNumber;
                     }
 
-                    Console.Write(numbers[i,j] + " ");
+                    Console.Write(numbers[i, j] + " ");
                 }
 
                 Console.WriteLine();
